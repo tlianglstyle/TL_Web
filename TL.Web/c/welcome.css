@@ -1,0 +1,121 @@
+﻿body{background-image: url(../i/bg.png);background-repeat:repeat-x;background-attachment: fixed;}
+#header{background: url(http://img01.taobaocdn.com/tps/i1/T1oX1sXBNfXXbXEEsf-3000-217.jpg) 50% -20px;height: 197px;}
+#header .hd{height:150px;position:relative;}
+#header .header_nav{width:100%;height:47px;background-color:Black;opacity:0.5;color:White;}
+#header .header_nav .hWord{float:left;width:590px;padding-top:15px;}
+#tag_list{width:auto;height:30px;position:absolute;top:10px;right:40px;}
+#tag_list a{height:15px;padding: 2px 10px 2px 18px;display:block;float:left;background: url(../i/ico_bullet.png) 0px 3px no-repeat;color: #9E9E9E; font-family:Microsoft Yahei;font-size:13px;margin-left:4px;}
+#tag_list a:hover{background-position: 0px -13px; text-decoration:none;color:#78bc27;}
+.hData{float:left;width:200px;padding-top:20px;}
+.hData li{float:left;padding-top:40px;width:30px;color:#52FF00;text-align:center;background-image: url(../i/bg_action.png);height:41px; background-repeat:no-repeat;margin-left:25px;}
+.hData1 li{float:left;padding-top:43px;width:45px;color:#52FF00;text-align:center;background-image: url(../i/bg_action.png);height:41px; background-repeat:no-repeat;margin-left:14px;}
+.hData li.d1{background-position:0px 0px;}
+.hData li.d1:hover{background-position:-28px 0px;}
+.hData li.d2{background-position:-58px 0px;}
+.hData li.d2:hover{background-position:-86px 0px;}
+.hData li.d3{background-position:-118px 0px;}
+.hData li.d3:hover{background-position:-151px 0px;}
+.hData1 li.d1{background-position:-1px 0px;}
+.hData1 li.d1:hover{background-position:-43px 0px;}
+.hData1 li.d2{background-position:-87px 0px;}
+.hData1 li.d2:hover{background-position:-129px 0px;}
+.hData1 li.d3{background-position:-175px 0px;}
+.hData1 li.d3:hover{background-position:-224px 0px;}
+.hData li a{display:block;color:#5CCA2F;margin:2px 0px;font-size:18px;font-family:georgia;}
+
+#content{}
+#left{position:relative;float:left;width:785px;padding:8px;height:auto;min-height:100px;}
+#right{position:relative;float:left;width:200px;height:auto;min-height:100px;margin-left:5px;}
+
+
+#left1{border-radius:5px;background-color:White;border-radius:5px;border:1px solid #D6D6D6;border-top:5px solid #48E457;box-shadow1: 0px 0px 10px 0px #29D329;}
+
+#left .post_list{margin-left:30px;}
+#left .post_item{margin-top: 0;padding-left: 5px;padding-right: 0px;padding-top: 10px;position:relative;}
+#left .post_item .post_body{ overflow-x: hidden;width: 630px;}
+#left .post_item .post_body h3{font-size: 14px;margin: 0px 0px 5px 0px;font-weight: bold;font-size:20px;  text-align:center;font-family: Microsoft YaHei;color:#4FE44A;}
+#left .post_item .post_body .post_content{height1:250px;line-height: 1.8em;margin-bottom: 5px;color: #757575;overflow: hidden;padding-right: 5px;font-size: 15px;padding-top: 5px;font-family: Microsoft YaHei;}
+#left .post_item .post_body .post_tool{width: 95px;
+text-align: center;
+position: absolute;
+font-weight: bold;
+color: white;
+font-family:  Microsoft YaHei;
+box-shadow: 0px 0px 5px 2px #B6B6B6;
+font-size: 25px;
+border-radius: 100px;
+padding: 30px 0px;
+background-color: #2FB1AC;
+right: 10px;
+top: -10px;}
+#left .post_item .post_body .post_btn
+{display: block;
+text-align: center;
+position: absolute;
+font-weight: bold;
+color: #A7A7A7;
+box-shadow: 1px 1px 3px 0px #AFAFAF;
+font-size: 15px;
+padding: 5px 5px;
+background-color: #F7F7F7;
+right: 10px;
+top: 120px;}
+#left .post_item .post_body .post_btn:hover{color:Green;}
+#left .list_hr{margin: 40px 0px;
+width: 800px;
+height: 4px;
+overflow: hidden;
+background: url(../i/blog/bg_blog.png) no-repeat;}
+
+#right .u{width:200px;min-height:40px;overflow:hidden;box-shadow: 1px 1px 3px 0px #AAA;border:1px solid #F1F0F0;background-color:White;margin-top:0px;padding-bottom:20px; box-shadow1: 0px 0px 10px 0px #29D329;}
+#right .u .uPhoto{position:absolute;top:-120px;z-index:1000;width:160px;width:160px;border-radius:90px;padding:5px; background-color: white;left:15px;box-shadow:0px 0px 16px 1px white;}
+#right .u .uPhoto img{width:160px;width:160px;border-radius:80px;}
+#right .u .uName{margin-top:55px; text-align:center;font-size:14px; font-weight:bold;color:#20AF2E;}
+#right .u .uInfo{margin-top:10px; text-align:center;font-size:13px;color:#666;}
+
+#right .topic{position:relative;width:180px;min-height:200px;padding:10px;padding-top1:30px;height: 240px;overflow:hidden;box-shadow: 1px 1px 3px 0px #AAA;border:1px solid #F1F0F0;background-color:White;margin-top:20px;}
+#right .topic h6{margin:4px 10px 15px;color: #20AF2E; font-weight:bold;}
+#right .topic .item{clear:both;width:180px;height:22px;padding:0px 0px;margin:0px;margin-top:5px;font-size:13px; text-align:left;background1:url(../i/bg_ico.png) no-repeat left -46px;}
+#right .topic .item .topic_num{width:20px;font-family:Gabriola;font-size:40px;float:left;margin:0px;padding:0px;
+background-image: url(../i/nav_x.png);height:20px;
+background-position: -95px -122px;}
+#right .topic .item .topic_content{width:150px;float:left;margin:0px;padding:0px;}
+#right .topic .item a{color:#55805A;overflow:hidden;text-overflow:ellipsis;display:block;white-space: nowrap;}
+#right .topic .item a:hover{color:#5CCA2F;}
+.topic_tool{line-height:30px;height:30px;width:70px;position:absolute;top:2px;right:0px;}
+.topic_tool a{width:20px;height:25px;background-image:url("../i/nav_x.png");display:block;float:right;margin-right:3px;}
+.topic_tool a.update{background-position:0px -101px;}
+.topic_tool a.update:hover{background-position:0px -122px;}
+.topic_tool a.close{background-position:-19px -101px;}
+.topic_tool a.close:hover{background-position:-19px -122px;}
+
+#right .history{display:none;position:relative;width:190px;max-height:400px;overflow:hidden;box-shadow: 1px 1px 3px 0px #AAA;border:1px solid #F1F0F0;background-color:White;margin-top:20px;box-shadow1: 0px 0px 10px 0px #29D329;padding:5px;}
+#right .history h6{margin: 10px 10px;color: #20AF2E; font-weight:bold;}
+#right .history li{overflow: hidden;zoom: 1;padding: 0px;float:left;}
+#right .history li img{border: 1px solid #E0E0E0;padding:0px;width:45px;height:45px;}
+#right .history li p{color:Gray;position:absolute;display:none;} 
+#right .history li b{color:#5CCA2F;}
+
+#right .p_reply{position:relative;width:200px;max-height:500px;overflow:hidden;box-shadow: 1px 1px 3px 0px #AAA;border:1px solid #F1F0F0;background-color:White;margin-top:20px;box-shadow1: 0px 0px 10px 0px #29D329;}
+#right .p_reply h6{margin: 10px 10px;color: #20AF2E; font-weight:bold;}
+#right .p_reply li{height:60px;overflow: hidden;zoom: 1;padding: 10px 0;border-top: 1px dotted #CCC;margin-top: -1px;}
+#right .p_reply li img{float:left;border: 1px solid #E0E0E0;padding: 1px;width:35px;height:35px;margin-left:7px;}
+#right .p_reply li p{float:left;margin-left:7px;color:Gray;width:120px;max-height: 15px;overflow:hidden;} 
+#right .p_reply li b{font-weight: normal;}
+#right .p_reply li span{float:right;color:silver;}
+#right .p_reply li p.title{color:Gray;font-weight:bold;float:none;    margin-bottom: 4px;font-size:13px;max-height: 16px;width:180px;}
+#right .p_reply li p.title a{color:#757575;white-space:nowrap;text-overflow:ellipsis;}
+#right .p_reply li p.info{padding:3px;color:#9C8E40;font-size:15px;}
+#right .p_reply li p.info img{max-width:23px;max-height:23px;border:0;}
+
+
+#toTops{display:block;text-decoration:none;width:50px;overflow:hidden;position:fixed;bottom:200px;left1:52%;right:-80px;border:none;text-indent:-999px;background-position:left top;cursor: pointer;margin-left: 495px;z-index:9999;
+        -webkit-transition: all 0.9s ease 0s;-moz-transition: all 0.9s ease 0s;-o-transition: all 0.9s ease 0s;transition: all 0.9s ease 0s;
+        }
+#toTops.scaleTop{right:50px;-moz-transform:scale(1) rotate(-360deg) translate(0px);-webkit-transform:scale(1) rotate(-360deg) translate(0px);-o-transform:scale(1) rotate(-360deg) translate(0px);transform:scale(1) rotate(-360deg) translate(0px);}
+#toTops > div{width:50px;height:50px;margin-top:6px;background-repeat: no-repeat;position:relative; overflow:hidden;}
+#toTops > div a{width:150px;height:50px;display:block;position:absolute; background-image: url(../i/bg_right_tool.png);}
+#toTops > div a:hover{opacity:0.6;}
+#toTops .item1 a{background-position:0px 0px;}
+#toTops .item2 a{background-position:0px 0px;}
+#toTops .item3 a{background-position:0px 0px;}s

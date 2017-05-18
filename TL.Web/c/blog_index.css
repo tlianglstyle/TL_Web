@@ -1,0 +1,39 @@
+
+
+#top{border:1px solid #CCCCCC; position:relative;margin-top:10px;border-top:1px solid #7ba6c6;border-bottom:0;height:300px;}
+
+.p1{width:214px;height:290px;background-image:url(../i/bg-p1.png);background-repeat:no-repeat; float:left;margin-top:-7px;}
+.p2{width:385px;height:280px;background-image:url(../i/blog/bg-p2.png);background-repeat:no-repeat; float:left;margin-left:5px;}
+.p3{width:400px;height:280px;float:left;margin-top:5px;margin-left:5px;}
+
+
+.p1 .user-div{width:140px;height:140px;padding:7px;background-color:White;border:1px solid #cccccc;margin:0 auto;margin-top:5px;}
+.p1 .user-div img{width:140px;height:140px;}
+.p1 center{font-size:13px;margin-top:3px;}
+.p1 center.p1_title{font-size:15px;color:White; font-weight:bold;margin:10px;height:20px;}
+
+.ul_p2 {width:360px;height:270px;margin:40px 10px 5px;}
+.ul_p2 li{height:20px;border-bottom:1px dashed #cccccc;padding:8px 0px;clear:both;}
+.ul_p2 li b{float:left; font-weight:bold;}
+.ul_p2 li a{float:left;height:18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.ul_p3 {width:380px;height:270px;margin:10px 10px 5px;}
+.ul_p3 li{height:20px;border-bottom:1px dashed #cccccc;padding:8px 0px;clear:both;}
+.ul_p3 li b{float:left; font-weight:bold;}
+.ul_p3 li a{float:left;width:290px;height:18px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin-left:5px;}
+.ul_p3 li span{float:left;font-family: georgia;font-size: 17px;color:Gray;width:70px;margin-left:5px; text-align:right;}
+
+.forum{border: 1px solid #CCCCCC;border-top:0;clear: both;height: auto;margin-top: 0px;}
+.forum .title{background-image: url("../i/blog/bg-p-2.png");background-repeat: repeat-x;font-size: 12px;font-weight: bold;padding-left: 10px;padding-top: 5px;height:24px;font-weight:bold;border-top:1px solid #9eb7d6;border-bottom:1px solid #9eb7d6;border-right:0;text-align:left;}
+.forum .list{}
+.forum .list li{height:50px;clear:both;padding:5px;border-bottom:1px dashed #cccccc;}
+.forum .list li:hover{background-color:whiteSmoke;}
+.forum .list li .l_1{margin-top:10px;float:left;}
+.forum .list li .l_1 img{width:31px;height:29px;border:0;}
+.forum .list li .l_2{margin-top:10px;float:left;width:650px;padding-left:20px;}
+.forum .list li .l_2 .forum-title{color:Black;font-weight:bold;}
+.forum .list li .l_2 .forum-title:hover{ text-decoration:underline;color:green;}
+.forum .list li .l_2 .num{color:Red;}
+.forum .list li .l_2 .name{color:gray;}
+.forum .list li .l_3{margin-top:10px;float:left;width:100px;font-family: georgia;font-size: 17px;color:Gray;}
+.forum .list li .l_4{margin-top:10px;float:left;width:200px;}

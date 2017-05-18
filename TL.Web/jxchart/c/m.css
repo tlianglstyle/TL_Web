@@ -1,0 +1,78 @@
+﻿@charset "utf-8";
+.ani{-moz-transition:all ease-out 0.3s !important;
+	-webkit-transition:all ease-out 0.3s !important;
+	transition:all ease-out 0.3s !important;}
+.scale,.scale-m{-webkit-transition: all 0.3s ease 0s;-moz-transition: all 0.3s ease 0s;-o-transition: all 0.3s ease 0s;transition: all 0.3s ease 0s;display:block;}
+.scale:hover{-webkit-transform: scale(0.96);-moz-transform: scale(0.96);-o-transform: scale(0.96);transform: scale(0.96);}
+.scale-m:hover{-webkit-transform: scale(1.10);-moz-transform: scale(1.10);-o-transform: scale(1.10);transform: scale(1.10);}
+body{background: url(../i/m/wavegrid.png) repeat left top;}
+#page{width:100%;height:auto;}
+.wrap{ margin: 0 auto;text-align: left;width: 1024px;position:relative;}
+
+#nav{
+z-index: 10001;
+height: 68px;
+background: url(../i/m/bg-header.jpg) no-repeat center top;
+margin: 0 auto;
+margin-bottom: 20px;
+border-bottom: 1px solid #A5A5A5;
+box-shadow: inset 0 1px white, 0 1px 3px rgba(34, 25, 25, 0.4);
+-moz-box-shadow: inset 0 1px #fff, 0 1px 2px rgba(34,25,25,0.4);
+-webkit-box-shadow: inset 0 1px white, 0 1px 3px rgba(34, 25, 25, 0.4);
+overflow: hidden;
+background-color: #256597;
+}
+#nav #nav_logo{width: 220px;height: 90px;float: left;margin: 0px 0 0 0;overflow: hidden;text-indent: -9999em;}
+#nav #nav_logo a{width: 158px;height: 74px;border-radius: 3px;margin: 0px;text-indent: -9999em;background: url(../i/m/bg-logo.png) no-repeat 0px 4px;display:block;}
+#nav #nav_menubar{margin: 0px 20px 0 0;float:right;}
+#nav #nav_menubar a
+{ color:#fff; padding: 25px 40px 25px 50px; -moz-border-radius:3px; font-family: microsoft yahei; float:left; background-position: 7px 20px; background-repeat: no-repeat; font-weight: normal; font-size: 16px; text-decoration:none; 
+	-moz-transition:all ease-out 0.3s;
+	-webkit-transition:all ease-out 0.3s;
+	transition:all ease-out 0.3s;
+	position:relative;
+	z-index:5;
+}
+#nav #nav_menubar a:hover, #nav #nav_menubar a.active { background-color: #0FAED6; /*box-shadow:rgba(255,255,255,0.3) 0 0 10px;*/ }
+
+
+#bt-lang { width:40px; height:40px; position:absolute; overflow:hidden; text-indent:-9999em; background:url(http://www.skitter-slider.net/images/bt-lang.png) no-repeat center top; right:0; top:0; -moz-transition:opacity 0.2s; }
+#bt-lang:hover { opacity:0.7; }
+
+#box-languages { position:absolute; top:40px; right:0; background: rgba(0, 0, 0, 0.49);background: black\9; width:40px; z-index: 300000; -moz-border-radius:0 0 0 3px;-webkit-border-radius:0 0 0 3px;border-radius:0 0 0 3px; display:none; }
+#box-languages ul { float:left; margin-top:3px; width:40px; padding:0; }
+#box-languages ul li { float:left; margin-bottom:0px; width:40px; text-align:center; padding:0; }
+#box-languages ul li a { float:left; margin-left:4px; }
+#box-languages ul li a img { float:left; }
+
+.box-tool{ position:fixed; top: 200px; right: 10px;background: black\9; z-index:250; display: none; -moz-border-radius:0 0 0 3px;-webkit-border-radius:0 0 0 3px;border-radius:0 0 0 3px; }
+.box-tool a{
+    width: 35px;
+    display: block;
+    height: 31px;
+    overflow: hidden;
+    margin-top: 1px;
+    padding: 12px 10px;
+    background-color: rgba(121, 121, 121, 0.44);
+    background-image: url(http://tliangl.com/i/bg_op.png)\9;
+}
+.box-tool a:hover{background-color:#0FAED6;}
+.box-tool a img{
+    float: left;
+    display: inline-block;
+}
+
+
+
+#content{min-height:600px;}
+
+#bottom{display:none;}
+#footer{width:100%;clear:both;}
+#footer-content{width:100%;height:80px;background-color:#363636;background-image: url(../i/m/bg_footer.jpg);border-top: 1px solid #444;box-shadow: 0px 0px 2px black;}
+#footer-info{width:1024px;height:80px;margin:0px auto;}
+#footer-info #footer-l{width:400px;height:80px;background: url(../i/m/logo_bottom.png);float:left;}
+#footer-info #footer-r{height:80px;float:right;}
+#footer-info #footer-r a{opacity:1;cursor:pointer;height:50px;background: url(../i/m/bottom-tool.png) no-repeat;float:left;display:inline-block;margin-top:10px;-webkit-transition: all 0.5s ease 0s;-moz-transition: all 0.5s ease 0s;-o-transition: all 0.5s ease 0s;transition: all 0.5s ease 0s;}
+#footer-info #footer-r a:hover{opacity:0.5;}
+#footer-info #footer-r a#footer-tx{width:50px;}
+#footer-info #footer-r a#footer-mail{width:50px;background-position: -105px 0px;margin-left:10px;}

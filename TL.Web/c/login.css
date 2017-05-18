@@ -1,0 +1,104 @@
+﻿#box{border:1px solid #8C8C8C;margin:40px 0px;-moz-box-shadow:5px 5px 5px #0E0E0F;background-color: #0E1011;-webkit-box-shadow:1px 1px 1px #0E0E0F;box-shadow:3px 5px 5px #181818}.click-here-btn{width:110px;height:25px;background:url(/includes/templates/argoz/images/click-here-btn.png) no-repeat;display:block}
+#box h3{background:url(../i/login/bg_login.png) no-repeat;width: 90%;height: 55px;margin: 10px auto;border-bottom: 1px solid #4E4E4E;}
+
+.box
+{margin: 15px 30px;
+padding: 20px;
+background: url(/i/login/billing.png);
+border: 1px solid #484949;
+-moz-box-shadow: inset 0 5px 5px 0 #171717;
+-webkit-box-shadow: inset 0 5px 5px 0 #171717;
+box-shadow: inset 0 5px 5px 0 #171717;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+height: 300px;
+    }
+.lefth, .righth {
+width: 440px;
+color: rgb(196, 196, 196);
+float: left;
+margin: 10px 0 0 50px;
+font-size: 15px;
+font-family: Microsoft yahei;
+}
+.left-block
+{
+    width: 420px;
+    height:300px;
+    overflow:hidden;
+float: left;
+padding: 0 10px 0 0;
+border-right: 1px solid #484848;
+position:relative;
+    }
+.left-block .left-slider
+{
+    position:absolute;
+    left:0px;top:0px;
+    width: 420px;
+    height:1000px;
+    }
+.left-block .left-item
+{
+ width: 420px;
+    }
+.right-block {
+width: 420px;
+float: left;
+padding: 0 0 0 20px;
+}
+
+.left {
+width: 210px;
+float: left;
+}
+.right {
+width: 210px;
+float: left;
+}
+.login-icon {width:526px; height:84px;display:none;}
+.item-btn {width: 46px; height: 46px;display: inline-block;float:left;margin-left:5px;}
+.item-btn .input-btn {background:url(http://s.xnimg.cn/smallsite/images/login-button.png) no-repeat;float:right; width:130px; height:47px; margin:0 8px 0 190px; *margin:0 8px 0 50px; _margin:0 12px 0 50px; border:none;  cursor:pointer; text-align:left;text-indent:-9999px; }
+.input-btn:hover{background:url(http://s.xnimg.cn/smallsite/images/login-hover.png) no-repeat;}
+.item-btn.login-icon{float:right;width:188px;height:46px;text-indent:-99999px;margin-right:10px;}
+.item-btn.login-icon a{float:left;width:46px;height:46px;margin-left:1px;}
+.item-btn.weibo{background:url(http://s.xnimg.cn/smallsite/images/login/login-icon2.png) no-repeat 0 0 transparent;}
+.item-btn.weibo:hover {background-position:-55px 0;}
+.item-btn.qq{background:url(http://s.xnimg.cn/smallsite/images/login/login-icon2.png) no-repeat 0 -53px transparent;}
+.item-btn.qq:hover {background-position:-55px -53px;}
+.item-btn.ren{background:url(http://s.xnimg.cn/smallsite/images/login/login-icon2.png) no-repeat 0 -105px transparent;}
+.item-btn.ren:hover {background-position:-55px -105px;}
+.item-btn.db{background:url(http://s.xnimg.cn/smallsite/images/login/login-icon2.png) no-repeat 0 -154px transparent;}
+.item-btn.db:hover {background-position:-54px -154px;}
+.img_other{width:70px;height:70px;padding:2px;border:1px solid white;border-radius:4px;}
+.img_other img{width:70px;height:70px;border-radius:4px;}
+#box .box label {
+display: block;
+font-family1: Microsoft yahei;
+font-size1: 16px;
+color: #CCCCCC;
+padding: 10px 0;
+}
+#box .box .tf {
+padding: 5px;
+width: 190px;
+border: 1px solid #6B6B6B;
+background: #525252;
+color: #E6E6E6;
+border-radius: 3px;
+box-shadow: inset 1px 1px 5px 0px black;
+}
+.login,.register,.login_back,.login_other {
+height: 28px;
+padding: 0px 30px;
+color: white;
+font: 13px/28px "宋体";
+border: 1px solid #7A7A7A;
+margin: 20px;
+background-color: #525252;
+border-radius: 3px;
+box-shadow: 1px 1px 5px 0px black;
+cursor: pointer;
+}
+.btn:hover{opacity:0.8}

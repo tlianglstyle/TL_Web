@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="default.master.cs"
+    Inherits="TL.Web._default1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="c/Mdefault.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="index_nav">
+        <div class="wrap">
+            <a class="indexlogo" href="http://www.tliangl.com"></a>
+            <div class="index_tool">
+            <%if (TL.Data.UserInfo.GetUserInfo().ID == 2)
+              {%>
+                <a href="blog.aspx">blog</a>
+                <a href="share_edit.aspx">share</a>
+                <a href="resource_edit.aspx">resource</a>
+                <a class="nav_name" title="注销用户" href="logout.aspx"><%=TL.Data.UserInfo.GetUserInfo().ID == 1 ? "" : TL.Data.UserInfo.GetUserInfo().uname%></a>
+                <%} %>
+                <a class="nav_name" href="http://mobile.lenovo-idea.com/2015/list/index.html">[Joysaloon]</a>
+                <a class="nav_name" href="mobile/lenovo.html">[Lenovo]</a>
+
+                <a class="nav_blog" title="Blog" href="welcome.aspx" target="_blank"></a>
+                <a class="nav_talk" title="Talk" href="leave.aspx"></a>
+                <a class="nav_login" title="Login" href="login.aspx"></a>
+            </div>
+            <div class="index_menu">
+                <a class="a" href="http://www.tliangl.com">Home</a>
+                <%--<a target="_blank" class="b" href="welcome.aspx">Blog</a>--%>
+                <a class="c" href="share.aspx">Shares</a>
+                <a class="d" href="resources.aspx">zCool</a>
+                <a class="d" href="Mu.html">About</a>
+                <a class="d" href="site_nav.aspx">Sites</a>
+            </div>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

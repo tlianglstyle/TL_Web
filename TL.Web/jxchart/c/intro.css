@@ -1,0 +1,6 @@
+#nav{display:none;}
+.pageBack,.pageStart{color: #FFFFFF;font-size: 22px;position: fixed;font-family: microsoft yahei;top: 0px;background-color: #2CC4F8;padding: 20px 30px;z-index:1001;display:block;}
+.pageBack:hover,.pageStart:hover{color:#1FB1E2;background-color:white;text-decoration:none;}
+.pageStart{right:0px;}
+.pageBack{left:0px;}
+#content{height: 3742px;}

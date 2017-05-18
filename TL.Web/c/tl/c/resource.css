@@ -1,0 +1,110 @@
+﻿body{background-image: url(../i/bg.png);background-repeat:repeat-x;background-attachment: fixed;}
+#header{height: 0px;}
+
+.checkbox-brand,.checkbox-filter{background-image:url("http://img02.taobaocdn.com/tps/i2/T1Z9Y1XhlgXXa0_6.A-70-800.png");padding-left: 15px;background-position: 0 -192px;font-size: 13px;text-decoration:none;background-repeat:no-repeat;}
+#filter .title{width:100px;height:30px;font-size:17px;color:#5CCA2F;text-align:center;float:left;padding-top:15px;border:0;font-family: Microsoft YaHei;}
+#filter ul{float:left;}
+#category-more,#brand-more{background:url("../i/resource/listicon.png") no-repeat scroll 0 0 transparent;float:left;width:25px;height:25px;background-position:-5px -146px;margin-top:15px;margin-left:5px;cursor:pointer;}
+#category-more:hover,#brand-more:hover{opacity:0.6;}
+#filter #filter-category{padding:5px;background-color1:#F4FCFF;}
+#filter #filter-category .title{background-color1:#F4FCFF;}
+#filter #filter-category ul{width:816px;overflow:hidden;height:47px;}
+#filter #filter-category ul li{width:100px;height:30px;border1:1px dotted #CFDBEC;float:left;text-align:center;padding-top:15px;font-size:13px;cursor:pointer; background-color1: #FDFDFD;font-family:  Microsoft YaHei; position:relative;}
+#filter #filter-category ul li:hover{border1:1px solid green;color:green; text-decoration:underline;}
+#filter #filter-category ul li b{display:block;width:12px;height:12px;border-radius:12px;border1:1px solid #E6DDDD;position:absolute;top:18px;left:20px;}
+#filter #filter-brand{padding:5px;background-color1:#F5F5F5;}
+#filter #filter-brand .title{background-color1:#F5F5F5;}
+#filter #filter-brand ul{width:795px;border: 1px solid #eee;overflow:hidden;min-height:40px;max-height:70px;background-color: white;padding:5px 10px;}
+#filter #filter-brand ul li{width:145px;height:20px;float:left;padding-top:3px;font-size:15px;cursor:pointer;padding-left:10px;}
+#filter #filter-brand ul li a:hover{color:#58D607;}
+#filter #filter-brand a{color:#7C7C7C;}
+#filter #filter-filter{padding:5px;background-color1:#F4FCFF;}
+#filter #filter-filter .title{background-color1:#F4FCFF;}
+#filter #filter-filter #filter-filter-ul{width:816px;border: 1px solid #DCDDDF;border-bottom:0;padding-top:5px;padding-bottom:5px;overflow:hidden;background-color: white;}
+#filter #filter-filter #filter-filter-ul li{width:145px;height:20px;float:left;padding-top:3px;cursor:pointer;text-align:center;margin-left:5px;}
+#filter #filter-filter ul li a{font-size: 13px;text-decoration:none;}
+#filter #filter-filter ul li a:hover{color:orange;}
+#filter #filter-filter .filter-filter-list{clear:both;height: 30px;margin-left: 5px;margin-right: 5px;border:1px solid #759BC0;}
+#filter #filter-filter .filter-filter-list ul{border:0;display:none;}
+#filter #filter-filter .filter-filter-list ul li:hover{color:orange;}
+.filter-filter-check{margin-bottom:-1px;border:1px solid #759BC0;border-bottom:2px solid white;font-size:16px;}
+.filter-filter-default{margin-bottom:0px;border:1px solid #CFDBEC;border-bottom:0;}
+
+#center{width:100%;margin-top:20px;}
+.item-order {margin-left: 20px;}
+.item-order a {
+    background: url("../i/resource/listicon.png") no-repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #D6D6D6;
+    color: #333333;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 5px;
+    text-align: center;
+    width: 40px;
+}
+.item-order a:hover, a.cur {
+    border-color: #6DB46A;
+    color: #6DB46A;
+    text-decoration: none;
+}
+.item-order a.cur {
+    cursor: default;
+    background-position: 35px -72px;
+}
+.item-order a {
+    background-position: 35px -52px;
+}
+.item-order a:hover{
+    background-position: 35px -72px;
+}
+.result-search{  
+    border: 1px solid gray;
+    color: gray;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 5px;
+    text-align: center;
+    width: 40px;
+	cursor:pointer;
+	}
+.result-search:hover{  text-decoration: none;}
+#icon-thumb,#icon-list{ background: url("http://img02.taobaocdn.com/tps/i2/T1Z9Y1XhlgXXa0_6.A-70-800.png") no-repeat scroll 0 -485px transparent;
+    border: 1px solid #D5D5D5;
+    display: block;
+    height: 20px;
+    overflow: hidden;
+	float:left;
+    text-indent: -9999px;
+    width: 20px;
+	cursor:pointer;
+	background-position: 0 -505px;
+	 }
+#icon-list{ border-left:0;background-position: 0 -525px;}
+
+
+#list{clear:both;padding-top:10px;width:1024px;}
+#list > div{width:191px;margin-left:8px;min-height:400px;margin-bottom: 10px;float:left;}
+#list #one{margin:0px;}
+#list > div > div{background-color:White;border: 1px solid #DADADA;margin: 10px 0px;}
+#list > div .block_i{width:180px;height:auto;border:0px;padding:5px; position:relative;}
+#list > div .block_i a{width:180px;height:auto;border:0px;z-index:90;}
+#list > div .block_i img{width:180px;height:auto;border:0px;z-index:90;}
+#list > div .block_i .bg{width:180px;height:40px;position:absolute;bottom:0px;background: url(../i/resource/bg_item.png) no-repeat 0 0;z-index:100;}
+#list > div p{width:190px;height:25px;margin-top:3px;}
+#list > div span{background: url(../i/resource/pages_sprites.png) no-repeat 0 0;height:25px;}
+#list > div span.heats{float: right;
+background-position: -5px -130px;
+padding-left: 15px;
+padding-right: 3px;
+margin-right: 5px;}
+#list > div span.hits{float: right;
+background-position: -5px -102px;
+padding-left: 18px;
+padding-right: 8px;}
+#list > div span.url{float: left;
+width: 24px;
+background-position: -5px -6px;margin-left: 10px;}
+#list > div span.url a{width: 24px;height:24px;display:block;}
+#list > div span.url a:hover{ text-decoration:none;}

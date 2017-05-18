@@ -1,0 +1,106 @@
+﻿.discover_wrap{padding:20px 0 50px}aadd.goods_wrap{position:relative;z-index:50;padding-top:15px}
+.discover_wrap .ui_page{margin:25px 0}
+.discover_wrap .sub_nav_item .current .i_arrow{background-position:0 -360px}
+.discover_wrap .sub_nav_item .current.clicked_cur .i_arrow{background-position:-15px -360px}
+.discover_wrap .sub_nav_bar{margin-bottom:18px}
+.discover_wrap .top_nav{margin:-6px 15px 20px;font-family:"宋体"}
+.discover_wrap .top_nav .cd{margin:0 7px}
+.discover_wrap .pop_discover{width:540px;top:37px;padding:7px 0}
+.discover_wrap .pop_discover .col{height:255px;width:109px;padding-left:10px;padding-right:15px}
+.discover_wrap .pop_discover a{width:98px;margin-left:5px;padding:0 3px;line-height:18px;color:#666}
+.discover_wrap .pop_discover a:hover{color:#fff}
+.discover_wrap .pop_discover .split{margin:8px 0}
+.discover_wrap .pic_card{-webkit-transition:none;-moz-transition:none;transition:none}
+.sub_nav_item .container{min-width:60px}
+.sub_nav_item .i_close{top:11px;right:7px;width:13px;height:13px;background:url(http://jpi.imghb.com/pici/sub_nav_del-1.png) no-repeat}
+.sub_nav_cell:hover .i_close{display:block}
+.sub_nav_item .i_close:hover,.sub_nav_item .i_close.hover{background-position:-18px 0}
+.sub_nav_item .i_close:active,.sub_nav_item .i_close.clicked{background-position:-36px 0}
+.sub_nav_item .current .i_close,.sub_nav_item .current .i_close:hover,.sub_nav_item .current .i_close.hover,.sub_nav_item .current .i_close:active,.sub_nav_item .current .i_close.clicked{background-position:0 -18px}
+.discover_wrap .layout_side{width:160px}
+.discover_wrap .layout_side .title{padding-left:14px}
+.discover_wrap .side_menu{margin-right:11px}
+.discover_wrap .side_menu .menu_item{padding-left:14px}
+.discover_wrap .side_menu .menu_item:hover{padding-right:11px;padding-left:22px;margin-right:-11px}
+.discover_wrap .side_menu .on .menu_item,.layout_side .side_menu .on .menu_item:hover{padding-right:11px;padding-left:22px;margin-right:-11px}
+.discover_sort{padding:4px 0 20px}
+.discover_sort .user_list .user_info p{width:260px}
+.discover_sort .user_list .user_faves{width:210px}
+.discover_filter{position:relative;z-index:50;padding:15px 3px 6px;height:19px;*height:auto;margin:0 35px 0 26px;border-bottom:1px solid #dadada}
+.discover_filter .i_location{margin-right:10px}
+.discover_filter .select_small{margin:-3px 0 0 0px;margin-top:-2px\0;*margin-top:1px;_margin-top:2px;_position:relative}
+.discover_filter .select_small .i_arrow{top:8px\0/;_top:7px}
+:root .discover_filter .select_small .i_arrow{top:7px\9}
+.discover_filter .select_small .status_item{border-color:#fff;color:#0192b5}
+.discover_filter .select_small .on{color:#333}
+.discover_filter .select_small .status_item:hover,.discover_filter .select_small .status_item:hover{border-color:#ccc;background:#efefef}
+.discover_filter .select_small .clicked,.discover_filter .select_small .clicked:hover{color:#fff;border-color:#4BA1BD;background:#62BBD1}
+.discover_filter .list_city{_top:20px;_left:0}
+.discover_filter .ui_list{width:100px;max-height:200px;_height:200px;overflow:auto;_top:20px;_left:0}
+.discover_filter .sp{margin:0 10px 0 11px}
+.discover_filter .last_slct{margin-right:5px}
+.discover_filter a:hover{text-decoration:none}
+.discover_filter a.on{color:#333}
+.discover_filter .sort_type{*margin-top:2px;*line-height:18px}
+.tips_sort{width:128px}
+.sort_all{width:102px}
+.tips_sort .tips_bd{text-align:center;white-space:nowrap;word-break:no-break}
+.tips_sort .i_arrow{left:50%;margin-left:-4px;top:-5px}
+.user_list{margin-top:4px}
+.user_list .item{padding:19px 0 23px;margin:0 35px 0 26px;background-color:#fff;border-top:1px solid #fff}
+.user_list .first{border-top:none}
+.user_list .last{border:none}
+.user_list .col_number{width:42px;line-height:22px;text-align:center;font-family:arial;font-size:16px;color:#666;margin:1px 8px 0 0}
+.user_list .col_number em{display:inline-block;zoom:1;width:22px;height:22px;font-style:normal;color:#fff;background:url(http://jpi.imghb.com/pici/bg_sort.png) no-repeat}
+.frdin_wrap{background:#f7f7f7 url(http://jpi.imghb.com/pici/sort_bg-1.png) repeat-y 100% 0}
+.frdin_start,.frdin_end,.frdin_end a{line-height:14px;background-image:url(http://jpi.imghb.com/pici/sort_bg_border-1.png);background-repeat:repeat-x}
+.frdin_start{background-position:50% 0;height:15px}
+.frdin_end{background-position:50% -25px;height:35px}
+.frdin_end a{height:35px;min-width:90px;line-height:20px;color:#727271;background-position:50% -70px;background-repeat:no-repeat;-webkit-text-shadow:0 1px 0 #fff;-moz-text-shadow:0 1px 0 #fff;text-shadow:0 1px 0 #fff}
+.frdin_end a:hover{text-decoration:none}
+.frdin_wrap .unexpand a{width:90px;background-position:50% -115px}
+.frdin_wrap .item{background-color:#f7f7f7}
+.fall_wrap{position:relative;height:810px;overflow:hidden}
+.fall_wrap .fall_cover{position:absolute;bottom:0;left:0;*bottom:-1px;width:100%;height:11px;overflow:hidden;z-index:100;background:url(http://jpi.imghb.com/pici/discover_fall_cover-1.png) repeat-x 50% 0;_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,sizingMethod=scale,src="http://jpi.imghb.com/pici/discover_fall_cover-1.png")}
+.find_show .btn_comt_self{width:61px;height:23px;background:url(http://jpi.imghb.com/pici/discover_comtself.png) no-repeat}
+.find_show_title{line-height:20px;padding:40px 0 0}
+.first_tit{padding-top:0}
+.find_show_title h3{font-weight:normal;color:#666;font-size:16px;padding-bottom:18px}
+.find_show_title h3 i{margin-right:5px;vertical-align:text-bottom}
+.find_show_title .i_friend_one{width:16px;height:18px;background:url(http://jpi.imghb.com/pici/discover_frdicon.png) no-repeat}
+.find_show_box{padding:0 15px;background-color:#fff;border:1px solid #e6e6e6}
+.find_frd .last{border:none}
+.find_frd_item{padding:20px 0;border-bottom:1px solid #eaeaea}
+.find_frd_item .info{width:410px;padding-left:18px}
+.find_frd_item .word_wrap{margin:5px 0 10px;line-height:18px}
+.find_frd_item .ui_photolist{width:365px;margin:22px -2px 0 0}
+.find_frd_item .ui_photolist li{width:85px;height:85px}
+.find_frd_item .ui_avatar img{-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px}
+.find_album{padding:17px 14px 22px 14px;margin-bottom:20px}
+.find_album .info{padding-bottom:15px;min-height:63px;_height:63px}
+.find_album .info_album{width:585px}
+.find_album .info_album .word_wrap{line-height:18px;margin-top:4px}
+.find_album .info_user{margin-top:5px}
+.find_album .info_user div.fix{_width:300px}
+.find_album .info_user .ui_avatar{margin-right:11px}
+.find_album .info_user .i_star{margin-top:-5px;_margin-top:0}
+.find_album .info_user .spr_btn{margin-top:9px}
+.find_album .info_user .action_info{margin:0 0 0 8px}aadd.find_album .info_user .cd{margin-left:8px}
+
+
+
+.find_album_list{margin-left:-3px;height:244px;overflow:hidden}
+.find_album_list .album_linewrap{float:left;width:122px}
+.find_album_list .ui_picwrap{float:left;display:inline;margin:0 0 3px 3px;background:url(http://jpi.imghb.com/pici/img_unload_bg.png) repeat}
+.find_album_list .ui_picwrap span{width:119px;height:119px}
+.find_album_list .ui_picwrap.first span{width:327px;height:241px}
+.find_album_list .ui_picwrap.empty{background:#fff}
+.find_album_list .ui_picwrap.empty span{width:117px;height:117px;border:1px solid #f5f5f5;cursor:default}
+.found_warp{background:#F3F3F3;border:1px solid #D8D5D6;border-color:#E2E0E1 #D8D5D6 #C7C4C5;width:230px;-moz-box-shadow:0 1px 2px rgba(0,0,0,0.15);-webkit-box-shadow:0 1px 2px rgba(0,0,0,0.15);box-shadow:0 1px 2px rgba(0,0,0,0.15);-webkit-transition:left .6s ease-in-out,top .6s ease-in-out;-moz-transition:left .6s ease-in-out,top .6s ease-in-out;-o-transition:left .6s ease-in-out,top .6s ease-in-out}
+.found_warp{line-height:25px}
+.found_warp .list{border-bottom:1px solid #E0E0DD;border-top:1px solid #fff;position:relative;_zoom:1}
+.found_warp .first{border-top-color:#fff}
+.found_warp .found_sub_nav{margin-left:49px;border-left:1px solid #ddd}
+.found_warp .item{border-left:1px solid #fff;padding:9px 0 9px 17px}
+.found_warp .item li{display:inline;float:left;margin-right:20px;white-space:nowrap}
+.found_warp a{color:#333}aadd.found_warp a.on{color:#0192B5}aadd.found_warp a:hover{text-decoration:none;color:#0192B5}aadd.found_warp .item_tit{display:block;position:absolute;top:50%;left:14px}aadd.list_all .item_tit{margin-top:-18px}aadd.list_pattern .item_tit{margin-top:-21px}aadd.list_style .item_tit{margin-top:-20px}aadd.list_furniture .item_tit{margin-top:-18px}aadd.d_all{background-position:0 0;width:16px;height:15px;margin-bottom:3px}aadd.d_rat{background-position:-120px 0;width:19px;height:12px;margin:0 0 4px 1px}aadd.d_pattern{background-position:-30px 0;width:20px;height:21px;margin-left:2px}aadd.d_style{background-position:-60px 0;width:16px;height:20px;margin:0 0 1px 3px}aadd.d_furniture{background-position:-90px 0;width:23px;height:12px;margin-bottom:5px}aadd.item_tit:hover .d_all,.found_warp a.on .d_all{background-position:0 -30px}aadd.item_tit:hover .d_pattern,.found_warp a.on .d_pattern{background-position:-30px -30px}aadd.item_tit:hover .d_style,.found_warp a.on .d_style{background-position:-60px -30px}aadd.item_tit:hover .d_furniture,.found_warp a.on .d_furniture{background-position:-90px -30px}aadd.item_tit:hover .d_rat,.found_warp a.on .d_rat{background-position:-120px -30px}aadd.master_apply{line-height:17px;padding-top:10px;*width:94px;*padding-top:6px}aadd.master_apply a{color:#333}aadd.master_apply a:hover{color:#0192b5;text-decoration:none}aadd.master_apply .i_vip_m{margin:-1px 2px 0 0;margin-top:-1px\0;*margin-top:3px}aadd.albumRec_wrap .sub_nav_bar .scroll_wrap{left:-2px;top:36px}aadd.albumRec_wrap .sub_nav_bar .ui_list{border-color:#ddd #999 #999 #ddd}aadd.albumRec_wrap .sub_nav_bar .scroll_container{max-height:none}aadd.albumRec_wrap .find_album .info{min-height:20px;_height:24px}aadd.albumRec_wrap .find_album .info_album{width:850px}aadd.albumRec_wrap .find_show_box .link_uinfo{vertical-align:bottom;line-height:18px}aadd.albumRec_wrap_title{padding:10px 0 30px}aadd.albumRec_wrap_title p{font-size:16px;font-weight:bold;line-height:40px}aadd

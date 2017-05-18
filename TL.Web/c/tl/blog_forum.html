@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="c/global.css" rel="stylesheet" type="text/css" />
+    <link href="c/main.css" rel="stylesheet" type="text/css" />
+    <link href="c/blog.css" rel="stylesheet" type="text/css" />
+    <link href="c/blog_forum.css" rel="stylesheet" type="text/css" />
+    <script src="j/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="j/c.js" type="text/javascript"></script>
+    <script src="j/m.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            index = 5;
+            $('.nav_' + index).bgPosition(nav_bg[index].x, nav_bg[index].y).a({ left: 0 }, 150); ;
+            $.tl_page_slider({ "control": ".my_page", request: true });
+
+        })
+    </script>
+</head>
+<body>
+    <div id="page">
+        <div id="nav">
+            <div class="wrap cl">
+                <div id="nav_logo">
+                    <a title="／骷↘沽鱼﹏的小屋"></a>
+                </div>
+                <div id="nav_menubar">
+                    <div>
+                        <a class="nav_1" href="index.html">
+                            <p>
+                                主页</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_2" href="blog.html">
+                            <p>
+                                随笔</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_3" href="photos.html">
+                            <p>
+                                相册</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_4" href="resource.html">
+                            <p>
+                                资源</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_5" href="blog_forum.html">
+                            <p>
+                                论坛</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="nav_link">
+                    <a>退出</a><a>管理员</a>
+                </div>
+                <div id="nav_search">
+                    <form class="text" method="get" action="">
+                    <input type="text" prompt="搜索你喜欢的" value="搜索你喜欢的" size="27" name="keyword" id="">
+                    <a href="#" id="query_button"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+            <div class="wrap cl">
+                <div id="logo">
+                </div>
+                <div id="link" class="none">
+                    <a class="mr20" style="color:black;">金榜题名集团</a><a>管理员</a> <a>退出</a>
+                </div>
+                <div id="menubar">
+                    <ul id="menu">
+                        <li><a>论坛首页</a></li>
+                        <li><a>论坛首页</a></li>
+                        <li><a>论坛首页</a></li>
+                    </ul>
+                    <input type="button" class="add mt3 ml10 fr" value="发表新帖" />
+                        <div id="menubar-search">
+                        <span class="ml20">搜索：</span>
+                        <input id="txt_search" />
+                        <img id="btn_search" src="i/blog/ico-search.png" />
+                    </div>
+                        <div id="menubar-word">
+                        <a>每日心情</a>
+                        <a>酒类销售</a>
+                        <a>情感交流</a>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+        <div id="content">
+        
+            <div id="cate-nav" class="wrap cl">
+                <div id="cate-link">
+                    <a>论坛首页 </a>» <a>员工风采</a>
+                </div>
+                <div id="cate-new">
+                    <a>这个放假放的太不干脆啦</a>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="forum">
+                    <div class="title">
+                        版面直达</div>
+                    <ul class="list">
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                        <li><a>员工风采</a><span>(214)</span></li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    <div class="forum-msg">
+                        <div class="mt5 ml5">
+                            <span class="f17 bold ml5">情感天地</span> &nbsp;今日:<span class="red f14 ht">21</span>
+                            &nbsp;全部:<span class="red f14 ht">124</span>
+                            <br />
+                            <span class="f13 ml10">版主:孙宇,宋永亮</span>
+                        </div>
+                        <div class="mt5 ml5 w95">
+                            【情感天地】本版主要以两性情感、麻辣婆媳，男女之间为主，供网友互动交流沟通。请勿在本版发表与本版无关的帖子，包括没有任何实际意义、不知所云的文章视为灌水，如有发现，第一次转灌水版规处理，恶意再发则直接删帖处理。
+                        </div>
+                    </div>
+                    <div class="toolbar cl">
+                        <input type="button" class="add mt5 ml10" value="发表新帖" />
+                        <div class="pagediv">
+                            <ul class="my_page">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tb_header cl">
+                        <ul class="sort cl">
+                            <li>精华帖</li>
+                            <li class="curr">回复数</li>
+                            <li>最新发表</li>
+                            <li>最新回复</li>
+                        </ul>
+                        <div class="column">
+                            时间
+                        </div>
+                        <div class="column">
+                            发表/回复
+                        </div>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="l_1">
+                                121
+                            </div>
+                            <div class="l_2">
+                                <a class="forum-name">[员工风采]</a> <a class="title">这个放假放的太不干脆啦</a>
+                                <div class="content">
+                                    这个放假放的太不干脆啦、、、他就不会放的星期天的不是更好、、、、、</div>
+                            </div>
+                            <div class="l_3">
+                                <div class="name">
+                                    谭亮</div>
+                                <div class="name">
+                                    宋永亮</div>
+                            </div>
+                            <div class="l_4">
+                                <span>06:11</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="toolbar cl">
+                        <input type="button" class="add mt5 ml10" value="发表新帖" />
+                        <div class="pagediv">
+                            <ul class="my_page">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cl"></div>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+        <div style="width: 170px; line-height: 24px; margin: 0 auto;">
+            &copy;<script type="text/javascript">                      document.write(new Date().getFullYear())</script>&nbsp;@&nbsp;北京.朝阳</div>
+        <div style="width: 200px; line-height: 24px; margin: 0 auto;">
+            style617313168@sohu.com</div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

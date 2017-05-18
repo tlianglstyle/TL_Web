@@ -1,0 +1,12 @@
+
+Disallow:/index.html
+Disallow:/index1.html
+Disallow:/blog.html
+Disallow:/blog_forum.html
+Disallow:/photos.html
+Disallow:/index.aspx
+Disallow:/resource.aspx
+Disallow:/resource_detail.aspx
+Disallow:/resource_edit.aspx
+Disallow:/share_edit.aspx
+Disallow: /c/

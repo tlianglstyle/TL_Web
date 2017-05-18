@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="c/global.css" rel="stylesheet" type="text/css" />
+    <link href="c/main.css" rel="stylesheet" type="text/css" />
+    <link href="c/photos.css" rel="stylesheet" type="text/css" />
+    <script src="j/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="j/c.js" type="text/javascript"></script>
+    <script src="j/m.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            index = 3;
+            $('.nav_' + index).bgPosition(nav_bg[index].x, nav_bg[index].y).a({ left: 0 }, 150); ;
+            $('#photos ul li').hover(function () {
+                if ($(this).hasClass('itme_2_2')) {
+                    $(this).op(1).find('div').stop().a({ top: 370 }, 100);
+                } else {
+                    $(this).op(1).find('div').stop().a({ top: 170 }, 100);
+                }
+                $(this).siblings().op(0.7);
+            }, function () {
+                if ($(this).hasClass('itme_2_2')) {
+                    $(this).find('div').stop().a({ top: 405 }, 100);
+                    if ($(this).hasClass('y')) {
+                        $(this).find('img:eq(0)').t(-405).stop().a({ top: 0 }, 500);
+                        $(this).find('img:eq(1)').t(0).stop().a({ top: 405 }, 500);
+                        $(this).removeClass("y").addClass("n");
+                    } else {
+                        $(this).find('img:eq(0)').t(0).stop().a({ top: -405 }, 500);
+                        $(this).find('img:eq(1)').t(405).stop().a({ top: 0 }, 500);
+                        $(this).removeClass("n").addClass("y");
+                    }
+                } else {
+                    $(this).find('div').stop().a({ top: 200 }, 100);
+                    if ($(this).hasClass('y')) {
+                        $(this).find('img:eq(0)').t(-200).stop().a({ top: 0 }, 500);
+                        $(this).find('img:eq(1)').t(0).stop().a({ top: 200 }, 500);
+                        $(this).removeClass("y").addClass("n");
+                    } else {
+                        $(this).find('img:eq(0)').t(0).stop().a({ top: -200 }, 500);
+                        $(this).find('img:eq(1)').t(200).stop().a({ top: 0 }, 500);
+                        $(this).removeClass("n").addClass("y");
+                    }
+                }
+            });
+            $('#photo_show ul li').hover(function () {
+                $(this).find('a').stop().a({ top: 10 }, 100);
+            }, function () {
+                $(this).find('a').stop().a({ top: 20 }, 100);
+            });
+            $('#photos ul li a,#photo_show ul li a').click(function () {
+                $('#photo_control').a({ left: -1024 }, 500);
+                $(c_sort).find('li').remove();
+                setTimeout(function () { photo_list(); }, 500);
+            });
+            $('#photo_back').click(function () {
+                $('#photo_control').a({ left: 0 }, 500);
+                $('#photo_tool').fadeOut(500);
+            });
+
+            var c_sort = "#photo_list";
+            var show = false;
+            var p_w = 203;
+            var p_h = 203;
+            var p_w_s = 5;
+            var p_h_s = 3;
+            var m = 1;
+            var c = null;
+            var p = { w: 0, h: 0, l: 0, t: 0, iw: 0, ih: 0 };
+            var page_index = 0;
+            var page_sum = 3;
+            $(c_sort + " li").afterbind('click', function () {
+                if (!show) {
+                    c = $(this);
+                    p.t = parseFloat(c.t());
+                    p.l = parseFloat(c.l());
+                    p.w = parseFloat(c.h());
+                    p.h = parseFloat(c.h());
+                    p.iw = parseFloat(c.children('img').css('max-width'));
+                    p.ih = parseFloat(c.children('img').css('max-height'));
+                    c.a({ left: 12, top: 12, width: 1000, height: 1000 }, 500);
+                    c.css('z-index', 1000).children('img').css({ "max-width": "1000px", "max-height": "1000px" });
+                    $('#photo_tool').delay(500).slideDown(200);
+                    c.siblings().fadeOut(500);
+                    show = true;
+                } else {
+                    c.a({ left: p.l, top: p.t, width: p.w, height: p.h }, 500);
+                    c.css('z-index', 1).children('img').css({ "max-width": p.iw, "max-height": p.ih });
+                    $('#photo_tool').slideUp(200);
+                    c.delay(500).siblings().fadeIn(500);
+                    show = false;
+                }
+            });
+            $("#photo_page a").afterbind('click', function () {
+                page_index = parseInt($(this).attr('v'));
+                photo_list();
+            });
+            $('#photo_tool .close').click(function () {
+                c.a({ left: p.l, top: p.t, width: p.w, height: p.h }, 500);
+                c.css('z-index', 1).children('img').css({ "max-width": p.iw, "max-height": p.ih });
+                $('#photo_tool').fadeOut(500);
+                c.delay(500).siblings().fadeIn(500);
+                show = false;
+            }).next().click(function () {
+                if (!c.is(":animated") && show && $(c_sort).children().index(c) + 1 < $('#photo_list li').length) {
+                    c.a({ left: p.l, top: p.t, width: p.w, height: p.h }, 150);
+                    c.css('z-index', 1).children('img').css({ "max-width": p.iw, "max-height": p.ih });
+                    c.delay(150).siblings().fadeIn(150);
+                    show = false;
+
+                    setTimeout(function () {
+                        c = c.next();
+                        p.t = parseFloat(c.t());
+                        p.l = parseFloat(c.l());
+                        p.w = parseFloat(c.h());
+                        p.h = parseFloat(c.h());
+                        p.iw = parseFloat(c.children('img').css('max-width'));
+                        p.ih = parseFloat(c.children('img').css('max-height'));
+                        c.a({ left: 12, top: 12, width: 1000, height: 1000 }, 300);
+                        c.css('z-index', 1000).children('img').css({ "max-width": "1000px", "max-height": "1000px" });
+                        $('#photo_tool').delay(200).slideDown(200);
+                        c.siblings().fadeOut(400);
+                        show = true;
+                    }, 200);
+                } else {
+                    if (page_index < page_sum) {
+                        page_index++;
+                        photo_list();
+                    }
+                }
+            }).next().click(function () {
+                if (!c.is(":animated") && show && $(c_sort).children().index(c) > 0) {
+                    c.a({ left: p.l, top: p.t, width: p.w, height: p.h }, 150);
+                    c.css('z-index', 1).children('img').css({ "max-width": p.iw, "max-height": p.ih });
+                    c.delay(150).siblings().fadeIn(150);
+                    show = false;
+
+                    setTimeout(function () {
+                        c = c.prev();
+                        p.t = parseFloat(c.t());
+                        p.l = parseFloat(c.l());
+                        p.w = parseFloat(c.h());
+                        p.h = parseFloat(c.h());
+                        p.iw = parseFloat(c.children('img').css('max-width'));
+                        p.ih = parseFloat(c.children('img').css('max-height'));
+                        c.a({ left: 12, top: 12, width: 1000, height: 1000 }, 300);
+                        c.css('z-index', 1000).children('img').css({ "max-width": "1000px", "max-height": "1000px" });
+                        $('#photo_tool').delay(200).slideDown(200);
+                        c.siblings().fadeOut(400);
+                        show = true;
+                    }, 200);
+                } else {
+                    if (page_index > 1) {
+                        page_index--;
+                        photo_list(); onclick = ''
+                    }
+                }
+            });
+            function photo_list() {
+                $('#photo_page a:eq(' + (page_index == 0 ? 0 : page_index - 1) + ')').addClass('c').siblings().removeClass('c');
+                $('#photo_tool').fadeOut(500); show = false;
+                if (page_index == 0) {
+                    var html_li = "";
+                    for (var i = 0; i < 75; i = i + 5) {
+                        html_li += "<li value='" + i + "'><img src=\"p/p/1/" + (i / 5 + 1) + ".jpg\" /></li>";
+                    }
+                    $(c_sort).html(html_li);
+                    $(c_sort + " li").w(p_w).h(p_h);
+                    $(c_sort + " li:animated").stop(true, false);
+                    var arr = new Array();
+                    var i = 0;
+                    $(c_sort + " li").hide().each(function () {
+                        arr[i] = $(this).attr("value"); i++;
+                    });
+                    for (var a = 0; a < arr.length; a++) {
+                        var o = $(c_sort + " li[value=" + arr[a] + "]");
+                        var t = 0, l = 0;
+                        t = m + (p_h + m) * (parseInt((a) / p_w_s));
+                        l = m + (p_w + m) * (parseInt((a + 1) % p_w_s) == 0 ? (p_w_s - 1) : parseInt(a % p_w_s));
+                        o.show();
+                        o.a({ top: t, left: l }, 500);
+                    }
+                } else {
+                    var html_li = "";
+                    for (var i = 0; i < 75; i = i + 5) {
+                        html_li += "<li value='" + i + "'><img src=\"p/p/1/" + (i / 5 + 1) + ".jpg\" /></li>";
+                    }
+                    $(c_sort).html(html_li);
+                    $(c_sort + " li").w(p_w).h(p_h).l(0).t(55 * (page_index - 1));
+                    $(c_sort + " li:animated").stop(true, false);
+                    var arr = new Array();
+                    var i = 0;
+                    $(c_sort + " li").hide().each(function () {
+                        arr[i] = $(this).attr("value"); i++;
+                    });
+                    for (var a = 0; a < arr.length; a++) {
+                        var o = $(c_sort + " li[value=" + arr[a] + "]");
+                        var t = 0, l = 0;
+                        t = m + (p_h + m) * (parseInt((a) / p_w_s));
+                        l = m + (p_w + m) * (parseInt((a + 1) % p_w_s) == 0 ? (p_w_s - 1) : parseInt(a % p_w_s));
+                        o.show();
+                        o.a({ top: t, left: l }, 500);
+                    }
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="page">
+        <div id="nav">
+            <div class="wrap cl">
+                <div id="nav_logo">
+                    <a title="／骷↘沽鱼﹏的小屋"></a>
+                </div>
+                <div id="nav_menubar">
+                    <div>
+                        <a class="nav_1" href="index.html">
+                            <p>
+                                主页</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_2" href="blog.html">
+                            <p>
+                                随笔</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_3" href="photos.html">
+                            <p>
+                                相册</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_4" href="resource.html">
+                            <p>
+                                资源</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_5" href="blog_forum.html">
+                            <p>
+                                论坛</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="nav_link">
+                    <a>退出</a><a>管理员</a><!--早上好, 世界的模样, 取决于你凝视她的目光-->
+                </div>
+                <div id="nav_search">
+                    <form class="text" method="get" action="">
+                    <input type="text" prompt="搜索你喜欢的" value="搜索你喜欢的" size="27" name="keyword" id="">
+                    <a href="#" id="query_button"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+        </div>
+        <div id="content">
+            <div id="photo_content" class="wrap cl">
+                <div id="photo_control">
+                    <div id="left">
+                        <div id="photo_show" class="wrap cl">
+                            <p>
+                                精华相册</p>
+                            <ul>
+                                <li class="itme_2_2"><a>
+                                    <img src="p/p/21.jpg" />
+                                </a>
+                                    <div class="photo_b">
+                                        <p>
+                                            相册</p>
+                                    </div>
+                                </li>
+                                <li class="itme_2_2"><a>
+                                    <img src="p/p/22.jpg" />
+                                </a>
+                                    <div class="photo_b">
+                                        <p>
+                                            相册</p>
+                                    </div>
+                                </li>
+                                <li class="itme_2_2"><a>
+                                    <img src="p/p/23.jpg" />
+                                </a>
+                                    <div class="photo_b">
+                                        <p>
+                                            相册</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="photos" class="wrap cl">
+                            <p>
+                                全部相册</p>
+                            <ul>
+                                <li class="itme_2_2"><a>
+                                    <img src="p/p/1.jpg" /><img src="p/p/1_2.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                                <li><a>
+                                    <img src="p/p/2.jpg" /><img src="p/p/2.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                                <li><a>
+                                    <img src="p/p/3.jpg" /><img src="p/p/3_2.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                                <li><a>
+                                    <img src="p/p/4.jpg" /><img src="p/p/4.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                                <li class="itme_2_1"><a>
+                                    <img src="p/p/6.jpg" /><img src="p/p/6_2.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                                <li><a>
+                                    <img src="p/p/5.jpg" /><img src="p/p/5.jpg" /><div>
+                                        相册</div>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <p>
+                            <a id="photo_back">返回相册</a></p>
+                        <div id="photo_page">
+                            <a v="1">
+                                <div>
+                                    1</div>
+                            </a><a v="2">
+                                <div>
+                                    2</div>
+                            </a><a v="3">
+                                <div>
+                                    3</div>
+                            </a>
+                        </div>
+                        <div id="photo_tool">
+                            <a class="close"></a><a class="next"></a><a class="prev"></a><a class="comment">
+                            </a>
+                        </div>
+                        <div id="photo_list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footer-content">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

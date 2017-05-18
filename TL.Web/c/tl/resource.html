@@ -1,0 +1,532 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="c/global.css" rel="stylesheet" type="text/css" />
+    <link href="c/back.css" rel="stylesheet" type="text/css" />
+    <link href="c/main.css" rel="stylesheet" type="text/css" />
+    <link href="c/resource.css" rel="stylesheet" type="text/css" />
+    <script src="j/jquery-1.8.0.min.js" type="text/javascript"></script>
+    <script src="j/c.js" type="text/javascript"></script>
+    <script src="j/m.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            index = 1;
+            $('.nav_' + index).bgPosition(nav_bg[index].x, nav_bg[index].y).stop().a({ left: 0 }, 150);
+            $("#category-more").toggle(function () {
+                $(this).css("background-position", "-5px -165px");
+                $("#filter-category ul").css("height", "auto");
+            }, function () {
+                $(this).css("background-position", "-5px -146px");
+                $("#filter-category ul").a({ height: 47 }, 200);
+            });
+            $("#brand-more").toggle(function () {
+                $(this).css("background-position", "-5px -165px");
+                $("#filter-brand ul").css({ "max-height": "200px", "height": "100%" });
+            }, function () {
+                $(this).css("background-position", "-5px -146px");
+                $("#filter-brand ul").a({ height: 70 }, 200);
+            });
+            $(".checkbox-brand").toggle(function () {
+                $(this).css("background-position", "0 -207px");
+            }, function () {
+                $(this).css("background-position", "0 -192px");
+            });
+            $(".checkbox-filter").toggle(function () {
+                $(this).css("background-position", "0 -207px");
+            }, function () {
+                $(this).css("background-position", "0 -192px");
+            });
+            $(".checkbox-brand-all").toggle(function () {
+                $(".checkbox-brand").css("background-position", "0 -207px");
+            }, function () {
+                $(".checkbox-brand").css("background-position", "0 -192px");
+            });
+            $(".checkbox-filter-all").toggle(function () {
+                $(".checkbox-filter").css("background-position", "0 -207px");
+            }, function () {
+                $(".checkbox-filter").css("background-position", "0 -192px");
+            });
+            $("#filter_1_ul").show();
+            $("#filter-filter #filter-filter-ul").children("li").click(function () {
+                $('#' + $(this).attr("id") + '_ul').show().siblings().hide();
+                $(this).removeClass("filter-filter-default").addClass("filter-filter-check").siblings("li").removeClass("filter-filter-check").addClass("filter-filter-default");
+            });
+            var settings = {
+                min: 200,
+                inDelay: 600,
+                outDelay: 400,
+                containerID: 'toTops',
+                containerHoverID: '#toTopHover',
+                scrollSpeed: 200, /*1200*/
+                easingType: 'linear'
+            };
+            var containerIDhash = settings.containerID;
+            var containerHoverIdHash = settings.containerHoverID;
+            $("#toTops").hide().click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 200);
+            });
+            $(window).scroll(function () {
+                var sd = $(window).scrollTop();
+                if (typeof document.body.style.maxHeight === "undefined") {
+                    $(containerIDhash).css({
+                        'position': 'absolute',
+                        'top': $(window).scrollTop() + $(window).height() - 50
+                    });
+                }
+                if (sd > settings.min)
+                    $("#" + containerIDhash).fadeIn(settings.inDelay);
+                else
+                    $("#" + containerIDhash).fadeOut(settings.Outdelay);
+            });
+            $('#toTops  a').hover(function () {
+                $(this).a({ left: -66 }, 150);
+            }, function () {
+                $(this).a({ left: 0 }, 150);
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="page">
+        <div id="nav" class="">
+            <div class="wrap cl">
+                <div id="nav_logo">
+                    <a title="／骷↘沽鱼﹏的小屋"></a>
+                </div>
+                <div id="nav_menubar">
+                    <div>
+                        <a class="nav_1" href="index.html">
+                            <p>
+                                主页</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_2" href="blog.html">
+                            <p>
+                                随笔</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_3" href="photos.html">
+                            <p>
+                                相册</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_4" href="resource.html">
+                            <p>
+                                资源</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_5" href="blog_forum.html">
+                            <p>
+                                论坛</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="nav_link">
+                    <div class="time">
+                        <object height="50" width="150" type="application/aliedit" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab"
+                            classid="clsid:488A4255-3236-44B3-8F27-FA1AECAA88441" id="sort_m" tabindex="2">
+                            <param value="transparent" name="wmode">
+                            <embed height="50" width="150" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer"
+                                type="application/x-shockwave-flash" loop="false" play="true" name="sort_m" id="sort_m"
+                                quality="high" src="i/honehone_clock_tr.swf">
+                        </object>
+                    </div>
+                    <a class="login_qq"></a>
+                </div>
+                <div id="nav_search">
+                    <form class="text" method="get" action="">
+                    <input type="text" prompt="搜索你喜欢的" value="搜索你喜欢的" size="27" name="keyword" id="">
+                    <a href="#" id="query_button" title="使用QQ登录"></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="header">
+
+        </div>
+        <div id="content">
+		<div class="wrap">
+		 <div class="crumb pt5 none">
+            <ul class="fl">
+                <li class="ico-crumb"><a href="" title="网站首页">首页</a>&gt;</li>
+                <li><a href="#" title="食品饮料">家居建材</a>&gt;</li>
+                <li><a href="#" title="饮料果汁">家庭电器</a>&gt;</li>
+                <li><a href="#" title="碳酸饮料 ">保暖用品</a>&gt;</li>
+                <li><span>电暖宝</span></li>
+            </ul>
+            <div class="fr">
+                <a href="#" class="import font15 mr20">所有商品分类</a></div>
+  </div>
+	     <div class="clear pt20"></div>
+		<!--filter-->
+		<div id="filter">
+			<div id="filter-category">
+				<div class="title">风格</div>
+				<ul>
+					<li v="棕色"><b style="background-color:#835729"></b>14</li>
+					<li v="黑色"><b style="background-color:#000000"></b>354</li>
+					<li v="白色"><b style="background-color:#FFFFFF"></b>212</li>
+					<li v="灰色"><b style="background-color:#CECECE"></b>157</li>
+					<li v="红色"><b style="background-color:red"></b>115</li>
+					<li v="绿色"><b style="background-color:#3FDB2A"></b>15</li>
+					<li v="蓝色"><b style="background-color:#154EFF"></b>14</li>
+					<li v="橙色"><b style="background-color:#FFD68E"></b>21</li>
+					<li v="紫色"><b style="background-color:#8F00FF"></b>14</li>
+					<li v="其他"><b style="background-color:#3F3F3F"></b>0</li>
+				</ul>
+				<div id="category-more"></div>
+				<div class="cl"></div>
+			</div>
+			<div id="filter-brand">
+			<div class="title">内容</div>
+				<ul>
+					<li><a class="checkbox-brand-all green bold">所有</a></li>
+					<li><a class="checkbox-brand green">饮食(208)</a></li>
+					<li><a class="checkbox-brand green">门户(45) </a></li>
+					<li><a class="checkbox-brand">机械(12)</a></li>
+					<li><a class="checkbox-brand">企业(580)</a></li>
+					<li><a class="checkbox-brand green">设计(712)</a></li>
+					<li><a class="checkbox-brand">UI(62)</a></li>
+					<li><a class="checkbox-brand">房产(50)</a></li>
+					<li><a class="checkbox-brand"> 影视音乐(72)</a></li>
+					<li><a class="checkbox-brand"> 电商(122) </a></li>
+					<li><a class="checkbox-brand">汽车(165)</a></li>
+					<li><a class="checkbox-brand"> 数码(102)</a></li>
+					<li><a class="checkbox-brand">美的</a></li>
+					<li><a class="checkbox-brand">摄影(73)</a></li>
+					<li><a class="checkbox-brand">时尚(133)</a></li>
+					<li><a class="checkbox-brand">教育(31)</a></li>
+					<li><a class="checkbox-brand">动漫(75)</a></li>
+					<li><a class="checkbox-brand">游戏(66)</a></li>
+					<li><a class="checkbox-brand">服饰(122)</a></li>
+					<li><a class="checkbox-brand">资源(65)</a></li>
+					<li><a class="checkbox-brand">社区(14)</a></li>
+					<li><a class="checkbox-brand">医疗(14)</a></li>
+				</ul>
+				<div id="brand-more"></div>
+				<div class="cl"></div>
+			</div>
+			<div id="filter-filter" class="none">
+				<div class="title">条件</div>
+				<ul id="filter-filter-ul">
+					<li id="filter_1" class="filter-filter-check"><a>价格区间</a></li>
+					<li id="filter_2" class="filter-filter-default"><a>断电保护</a></li>
+					<li id="filter_3" class="filter-filter-default"><a>主要材质</a></li>
+					<div class="filter-filter-list">
+					<ul id="filter_1_ul">
+						<li><a class="checkbox-filter">0-99元</a></li>
+						<li><a class="checkbox-filter">100-199元</a></li>
+						<li><a class="checkbox-filter">200-299元</a></li>
+						<li><a class="checkbox-filter">300-399元</a></li>
+					</ul>
+					<ul id="filter_2_ul">
+						<li><a class="checkbox-filter">完全断电</a></li>
+						<li><a class="checkbox-filter">局部断电</a></li>
+						<li><a class="checkbox-filter">不断电</a></li>
+						<li><a class="checkbox-filter">无</a></li>
+					</ul>
+					<ul id="filter_3_ul">
+						<li><a class="checkbox-filter">铝合金</a></li>
+						<li><a class="checkbox-filter">铁质</a></li>
+						<li><a class="checkbox-filter">其他</a></li>
+					</ul>
+					</div>
+				</ul>
+				<div class="cl"></div>
+			</div>
+		</div>   
+		<div id="center">
+			<div class="fl item-order">
+                <a class="cur" title="按销量升序排序" href="#">最新</a>
+                <a class="" title="按价格降序排序" href="#">查看</a>
+                <a class="" title="按评论降序排序" href="#">评论</a>
+            </div>
+			<div class="fl ml10">
+			<a id="icon-thumb" title="大图展示"></a>
+			<a id="icon-list" title="列表展示"></a>
+			</div>
+			<div class="fl ml20">
+			<input class="h20px" />
+			<a class="result-search corner5" title="结果中筛选" href="#">筛选</a>
+			</div>
+			<div id="list">
+            <div id="one">
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a>
+            <div class="bg"></div>
+            </div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            </div>
+            <div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            </div>
+            <div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            </div>
+            <div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            </div>
+            <div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            <div>
+            <div class="block_i"><a><img src="http://img03.taobaocdn.com/bao/uploaded/i3/16786025559342673/T12i4nFo4eXXXXXXXX_!!68506786-0-pix.jpg_240x10000.jpg" width="240" height="136"></a></div>
+            <p>
+                <span class="heats" title="当前热度0">
+                0</span>
+                <span class="hits" title="已有3671次浏览">
+                3671</span>
+                <span class="url">
+                <a href="http://www.igot12.com" class="link_url" target="_blank" title="在新的页面直接打开该网站">&nbsp;</a>
+                </span>
+            </p>
+            </div>
+            </div>
+		</div>
+		</div>
+        <div class="clear"></div>		
+		</div>
+        <div id="footer">
+            <div id="footer-content">
+
+            </div>
+        </div>
+    </div>
+    <div id="toTops" title="回到顶部">
+        <div class="item1">
+            <a></a>
+        </div>
+        <div class="item2">
+            <a></a>
+        </div>
+        <div class="item3">
+            <a></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+.link_logo{display:none;}
+.chart-center{width: 800px;position:relative;height: 404px;overflow: hidden;}
+.chart-center .chart-refresh{display: block;
+position: absolute;
+width: 40px;
+height: 40px;
+top: 360px;
+left: 2px;
+background-image: url(../i/make/bg-refresh.png);
+background-color: white;
+background-repeat: no-repeat;
+background-position: 0px 0px;
+box-shadow: 2px 2px 3px 0px #AFAFAF;}
+.chart-center .chart-refresh:hover{opacity:0.7;}
+#chart{width: 800px;height: 350px;}
+.chart-tool{position: absolute;
+bottom: 70px;
+width: 780px;
+display: none;padding: 8px;
+left: 02px;
+background-color: white;
+box-shadow: 2px 2px 3px 0px #AFAFAF;}
+.chart-tool a{padding: 7px 30px;
+background-color:  rgb(38, 209, 38);
+color: white;
+display: inline-block;font-size: 13px;border-radius: 2px;margin-left: 10px;cursor:pointer;}
+.chart-tool a.n{background-color:#F1F1F1;color:dimGray;}
+.chart-tool a:hover:{opacity:0.8;text-decoration:none;}

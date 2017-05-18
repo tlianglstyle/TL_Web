@@ -1,0 +1,15 @@
+﻿.topic{border:1px solid #CCCCCC; position:relative;margin-top:10px;border-top:1px solid #7ba6c6;min-height:300px;}
+
+.topic .user{width:214px;height:290px;background-image:url(images/bg-p1.png);background-repeat:no-repeat; float:left;margin-top:-7px;}
+.topic .user .user-div{width:140px;height:140px;padding:7px;background-color:White;border:1px solid #cccccc;margin:0 auto;margin-top:5px;}
+.topic .user .user-div img{width:140px;height:140px;}
+.topic .user center{font-size:13px;margin-top:3px;}
+.topic .user center.user_title{font-size:15px;color:White; font-weight:bold;margin:10px;height:20px;}
+.topic .detail{width:790px;height: auto;float:left;padding:5px;}
+.topic .detail .title{height:30px; border-bottom:1px solid #f3f3f3;}
+.topic .detail .date{margin-top: 5px;   font-family: 黑体;font-size: 13px;}
+.topic .detail .content{width:95%;margin:15px 5px;}
+
+.topic .replay{border:1px solid #CCCCCC; position:relative;margin-top:10px;border-top:1px solid #7ba6c6;min-height:100px;}
+.topic .replay .left{}
+.topic .replay .right{}

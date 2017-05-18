@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TL.Web.jxchart.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>极限报表-中国最流行的在线报表生成工具</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="极限报表,jixianbaobiao,在线报表,在线图表" />
+    <meta name="keywords" content="极限报表,jixianbaobiao,在线报表,在线图表,在线图表生成器" />
+    <meta http-equiv="description" content="极限报表产品提供几十种在线报表样式，可以随意设置内容、颜色、形式，可以存为图片，PDF和HTML格式，可随心选择任意背景和报表颜色。极限报表,jixianbaobiao,在线报表,在线图表,在线图表生成器" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="c/g.css" rel="stylesheet" type="text/css" />
+    <link href="c/m.css" rel="stylesheet" type="text/css" />
+    <script src="j/jq.min.js" type="text/javascript"></script>
+    <script src="j/c.js" type="text/javascript"></script>
+    <script src="j/m.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+<script type="text/javascript">    window.bd && bd._qdc && bd._qdc.init({ app_id: '987ca4f88557ccb0e217bf5d' });</script>
+</head>
+<body>
+   <div id="page">
+   <div id="nav">
+            <div class="wrap cl">
+                <div id="nav_logo">
+                    <a href="main.aspx" title="jixianbaobiao.com"></a>
+                </div>
+                <div id="nav_menubar">
+					<a href="use.aspx" data-name="" rel="page-home" class="active" data-title="">使用</a>
+					<a href="intro.aspx" data-name="how-to-install" rel="page-how" data-title="How to install">介绍</a>
+					<a href="example.aspx" data-name="updatelog" rel="page-updatelog" data-title="Updatelog">示例</a>
+					<a href="stat.aspx" data-name="comments" rel="page-comments" data-title="Comments">统计</a>
+			    </div>
+            </div>
+            <div class="nav_close">
+            </div>
+            <div class="nav_open">
+            </div>
+            <div class="nav_light">
+            </div>
+            <a href="#" id="bt-lang">Language</a>
+            <div id="box-languages" style=" ">
+				<ul>
+										<li><a href="?lang=en_US"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/en_US.png"></a></li>
+										<li><a href="?lang=es_ES"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/es_ES.png"></a></li>
+										<li><a href="?lang=fr_FR"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/fr_FR.png"></a></li>
+										<li><a href="?lang=it_IT"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/it_IT.png"></a></li>
+										<li><a href="?lang=ja_JP"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/ja_JP.png"></a></li>
+										<li><a href="?lang=pt_BR"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/pt_BR.png"></a></li>
+										<li><a href="?lang=ru_RU"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/ru_RU.png"></a></li>
+										<li><a href="?lang=tr_TR"><img alt="极限报表" src="http://www.skitter-slider.net//images/flags/tr_TR.png"></a></li>
+									</ul>
+			</div>
+        </div>
+        <div id="content">
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        </div>
+        
+        <div id="footer">
+            <div id="footer_bg">
+            </div>
+            <div id="footer-content">
+                <div id="footer-info">
+                
+                    <div id="footer-l">
+                    </div><a class="link" href="http://tliangl.com" style="color:#212157;">.</a>
+                    <div id="footer-r">
+                        <a target="_blank" id="footer-tx" href="mailto:tliangl@sohu.com" title="tliangl@sohu.com">
+                        </a><a target="_blank" id="footer-mail" href="http://weibo.com/creatunion" title="微博">
+                        </a>
+                        <div style="width: 200px; line-height: 24px; margin: 0 auto; display: none;">
+                            jixianbaobiao@creatunion.com.cn</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+        <center>Copyright&nbsp;2014 jixianbaobiao.com all right reserved.</center>
+        </div>
+        </div>
+        
+        <div class="box-tool">
+        <a title="用户调研"><img alt="极限报表" src="http://mikecrm.com/images/icon/sidebarSurvey.png" /></a>
+        <a title="分享"><img alt="极限报表" src="http://mikecrm.com/images/icon/sidebarShare.png" /></a>
+        <a title="留言反馈"><img alt="极限报表" src="http://mikecrm.com/images/icon/sidebarFB.png" /></a>
+        </div>
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1000401057'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/z_stat.php%3Fid%3D1000401057%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>

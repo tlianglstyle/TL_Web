@@ -1,0 +1,130 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="TL.Web.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit">
+    <meta name="author" content="谭亮,tanliang,谭亮小盆友" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="/c/Mglobal.css" rel="stylesheet" type="text/css" />
+    <link href="/c/main.css" rel="stylesheet" type="text/css" />
+    <%--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>--%>
+    <script src="/j/jq.min.js" type="text/javascript"></script>
+    <script src="/j/Mc.js" type="text/javascript"></script>
+    <script src="/j/Mm.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <%--<script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=5&amp;fs=4&amp;bgcolor=Green&amp;pophcol=3"></script>--%>
+    <div id="page">
+        <div id="nav">
+            <div class="wrap cl">
+                <div id="nav_logo">
+                    <a href="http://www.tliangl.com" title="TLiangl.com"></a>
+                </div>
+                <div id="nav_menubar">
+                    <div>
+                        <a class="nav_1" href="welcome.aspx">
+                            <p>
+                                主页</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_2" href="blog.aspx">
+                            <p>
+                                存档</p>
+                        </a>
+                    </div>
+                    <div class="none">
+                        <a class="nav_3" href="resource.aspx">
+                            <p>
+                                喜欢</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_4" href="photos.aspx">
+                            <p>
+                                相册</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="nav_5" href="leave.aspx">
+                            <p>
+                                留言</p>
+                        </a>
+                    </div>
+                    <span id="ss"></span>
+                </div>
+                <div id="nav_link">
+                    <div class="time">
+                    </div>
+                    <a class="login_qq" title="登录" href="login.aspx"></a><a class="login_tx" title="腾讯微博"
+                        href="http://t.qq.com/style617313168" target="_blank"></a>
+                </div>
+                <div id="nav_search">
+                    <form action="http://www.baidu.com/baidu" target="_blank">
+                    <input type="text" name="word" class="input_text" value="search" prompt="search" size="27" />
+                    <input type="submit"  class="input_submit" value="" />
+                    <input name="tn" type="hidden" value="bds" />
+                    <input name="cl" type="hidden" value="3" />
+                    <input name="ct" type="hidden" value="2097152" />
+                    <input name="si" type="hidden" value="www.tliangl.com" />
+                    </form>
+                </div>
+            </div>
+            <div class="nav_close">
+            </div>
+            <div class="nav_open">
+            </div>
+            <div class="nav_light">
+            </div>
+        </div>
+        <div id="nav_bg">
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+             <div class="link">
+                <div class="link_button">
+                </div>
+                <div class="link_n">
+                    <a href="http://www.likexia.com/" target="_blank">likexia.com</a> | <a href="http://www.iconfans.com/"
+                        target="_blank">Iconfans</a> | <a href="http://www.uisdc.com/" target="_blank">优秀网页设计</a>
+                    | <a href="http://www.orgsc.com/" target="_blank">沃格斯克</a> | <a href="http://www.loveui.cn/"
+                        target="_blank">LOVEUI</a> | <a href="http://www.onhoo.com" target="_blank">暗号设计</a>
+                    | <a href="http://www.ui22.com/" target="_blank">SHEMO</a> | <a href="http://www.guimobile.net/"
+                        target="_blank">莫贝网</a> | <a href="http://www.uisheji.com/" target="_blank">UI设计网</a>
+                    | <a href="http://www.syg315.com/" target="_blank">素云阁</a> | <a href="http://www.kelvinvt.com/"
+                        target="_blank">启点在线</a> | <a href="site_nav.aspx" target="_blank" title="网址导航">更多»</a>
+                </div>
+            </div>
+        <div id="center_cl">
+        </div>
+        <div id="footer">
+            <div id="footer_bg">
+            </div>
+            <div id="footer-content">
+                <div id="footer-info">
+                    <div id="footer-l">
+                    </div>
+                    <div id="footer-r">
+                        <a target="_blank" id="footer-tx" href="mailto:tliangl@sohu.com" title="tliangl@sohu.com">
+                        </a><a target="_blank" id="footer-mail" href="http://weibo.com/u/3799340527" title="微博">
+                        </a>
+                        <div style="width: 220px; line-height: 24px; margin: 0 auto; display: none;">
+                            Copyright ©
+                            <script type="text/javascript"> document.write(new Date().getFullYear())</script>
+                            &nbsp;@&nbsp;北京.朝阳.谭亮小盆友</div>
+                        <div style="width: 200px; line-height: 24px; margin: 0 auto; display: none;">
+                            tliangl@sohu.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">        var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1000145365'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000145365%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>
